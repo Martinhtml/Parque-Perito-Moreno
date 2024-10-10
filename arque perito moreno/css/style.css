@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inria Sans';
+}
+@font-face {
+    font-family: 'Inria Sans';
+    src: url(../fuentes/Inria_Sans/InriaSans-Regular.ttf);
+}
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Inria Sans';
+    font-size: 25px;
+    background-color: #52733B;
+}
+body{
+    background-image: url(../assets/img/TC7R6GVLLVEY3K6HZ6PSAQVCXU.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+.img{
+    padding: 1%
+}
+nav{
+    width: 100%;
+    background-color: #84A45A;
+    height: 40px;
+    font-family: 'Inria Sans';
+    font-size: 18px;
+}
+li{
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 12%;
+    transition: 1s;
+}
+a{
+    font-family: 'Inria Sans';
+    text-decoration: none;
+    color: black;
+}
+ul{
+    padding-top: 0.6%;
+}
+nav ul li:hover{
+    transform: scale(1.3, 1.3);
+    background-color: #4b733b;
+}
+#grid{
+    align-items: center;
+    display: grid;
+    justify-items: center;
+    height: 2550px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'foto1 foto2 foto3'
+    'foto4 foto5 foto6'
+    'foto7 foto8 foto9'
+    'foto10 foto11 foto12'
+    'foto13 foto14 foto15';
+}
+.tarjeta{
+    position: relative;
+    width: 300px;
+    height: 350px;
+}
+.nro1{
+    grid-area: 'foto1';
+}
+.nro2{
+    grid-area: 'foto2';
+}
+.nro3{
+    grid-area: 'foto3';
+}
+.nro4{
+    grid-area: 'foto4';
+}
+.nro5{
+    grid-area: 'foto5';
+}
+.nro6{
+    grid-area: 'foto6';
+}
+.nro7{
+    grid-area: 'foto7';
+}
+.nro8{
+    grid-area: 'foto8';
+}
+.nro9{
+    grid-area: 'foto9';
+}
+.nro10{
+    grid-area: 'foto10';
+}
+.nro11{
+    grid-area: 'foto11';
+}
+.nro12{
+    grid-area: 'foto12';
+}
+.nro13{
+    grid-area: 'foto13';
+}
+.nro14{
+    grid-area: 'foto14';
+}
+.nro15{
+    grid-area: 'foto15';
+}
+.cara{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+.Frontal{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+.Frontal img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.Frontal h3{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+
+}
+.Trasera{
+    transform: perspective(600px) rotateY(180deg);
+    padding: 15px;
+    background: #4b733b;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.Trasera h3{
+    font-size: 30px;
+    margin-top: 5%;
+    letter-spacing: 2px;
+}
+.Trasera p{
+    letter-spacing: 1px;
+    padding-bottom: 12%;
+}
+.tarjeta:hover .Frontal{
+    transform: perspective(600px) rotateY(180deg);
+}
+.tarjeta:hover .Trasera{
+    transform: perspective(600px) rotateY(360deg);
+}
+footer{
+    display: inline-block;
+    height: 275px;
+    width: 100%;
+    color: white;
+    background-color: #241d18;
+}
+footer a{
+    color: white;
+}
+.logos{
+    height: 90px;
+    width: 800px;
+}
+.logos img{
+    height: 80px;
+    width: 80px;
+    transition: .3s ;
+}
+footer div{
+    width: 100%;
+    height: 33%;
+}
+.linea1{
+    display: flex;
+    flex-direction: row;
+}
+.links{
+    padding: 2%;
+    font-size: 20px;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.contactos p{
+    padding-left: 1%;
+}
